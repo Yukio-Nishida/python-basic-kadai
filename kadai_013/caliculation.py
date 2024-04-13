@@ -1,10 +1,13 @@
-# 与えられた引数$priceに消費税10%分を加算し、その値を出力する関数を定義する
-def total_calc(price):
-    # 与えられた引数priceにを消費税額を加算し、変数totalに代入する
-    total = price + (price * 0.1)
+def total_calc(price, tax):
 
-    # 変数totalの値を出力する
-    print(f"合計は{total}円です。")
+    #与えられた引数priceと引数shipping_feeを加算し、変数totalに代入する
+    total = price + tax
 
-# 関数を呼び出し、引数として購入金額を渡す
-total_calc(1000)
+    #変数totalの値を出力する
+    print(f"合計金額は{total}円です。")
+
+    #戻り値の設定
+    return price + tax
+
+# 関数を呼び出し、引数として購入金額と送料を渡す
+total_calc(1000, (1000 * 0.1))
