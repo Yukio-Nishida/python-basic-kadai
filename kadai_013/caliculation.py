@@ -1,6 +1,6 @@
 def total_calc(price, tax):
 
-    #与えられた引数priceと引数shipping_feeを加算し、変数totalに代入する
+    #与えられた引数priceと引数taxを加算し、変数totalに代入する
     total = price + tax
 
     #変数totalの値を出力する
@@ -9,5 +9,5 @@ def total_calc(price, tax):
     #戻り値の設定
     return price + tax
 
-# 関数を呼び出し、引数として購入金額と送料を渡す
+# 関数を呼び出し、引数として購入金額と消費税額(10%分)を渡す
 total_calc(1000, (1000 * 0.1))
